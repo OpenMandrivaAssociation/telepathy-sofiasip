@@ -1,10 +1,10 @@
 Name:           telepathy-sofiasip
 Version:        0.5.4
 Release:        %mkrel 1
-Summary:        XXX
+Summary:        A SIP protocol implementation for the Telepathy stack
 
 Group:          Networking/Instant messaging
-License:        GPLv2+
+License:        LGPL
 URL:            http://%{name}.sf.net
 Source0:        %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
@@ -14,6 +14,9 @@ BuildRequires:  pkgconfig(sofia-sip-ua-glib)
 Requires:       telepathy-filesystem
 
 %description
+telepathy-sofiasip is a SIP-protocol connection manager (protocol plugin) 
+for the Telepathy (http://telepathy.freedesktop.org) framework based on 
+SofiaSIP-stack.
 
 %files
 %defattr(-,root,root,-)
@@ -23,21 +26,16 @@ Requires:       telepathy-filesystem
 %{_libdir}/%{name}
 %{_mandir}/man*/*.lzma
 
-#--------------------------------------------------------------------
-
 %prep
 %setup -q
-
 
 %build
 %configure 
 %make
 
-
 %install
 rm -rf %buildroot
 make install DESTDIR=%buildroot
-
 
 %clean
 rm -rf %buildroot
