@@ -11,6 +11,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  telepathy-glib  libxslt-proc
 BuildRequires:  pkgconfig(sofia-sip-ua-glib)
+BuildRequires:  python
 Requires:       telepathy-filesystem
 
 %description
