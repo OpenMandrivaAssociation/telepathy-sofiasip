@@ -9,7 +9,7 @@ URL:            http://%{name}.sf.net
 Source0:        %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires:  telepathy-glib
+BuildRequires:  telepathy-glib  libxslt-proc
 BuildRequires:  pkgconfig(sofia-sip-ua-glib)
 Requires:       telepathy-filesystem
 
