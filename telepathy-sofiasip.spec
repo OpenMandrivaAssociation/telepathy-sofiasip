@@ -1,5 +1,5 @@
 Name:           telepathy-sofiasip
-Version:        0.5.4
+Version:        0.5.5
 Release:        %mkrel 1
 Summary:        A SIP protocol implementation for the Telepathy stack
 
@@ -27,7 +27,7 @@ SofiaSIP-stack.
 %{_mandir}/man*/*.lzma
 
 %prep
-%setup -q
+%setup -q -n telepathy-sofiasip-0.5.5.0
 
 %build
 %configure 
