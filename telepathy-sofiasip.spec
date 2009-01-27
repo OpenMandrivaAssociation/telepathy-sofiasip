@@ -1,5 +1,5 @@
 Name:           telepathy-sofiasip
-Version:        0.5.11
+Version:        0.5.14
 Release:        %mkrel 1
 Summary:        A SIP protocol implementation for the Telepathy stack
 
@@ -16,8 +16,8 @@ BuildRequires:  python
 Requires:       telepathy-filesystem
 
 %description
-telepathy-sofiasip is a SIP-protocol connection manager (protocol plugin) 
-for the Telepathy (http://telepathy.freedesktop.org) framework based on 
+telepathy-sofiasip is a SIP-protocol connection manager (protocol plugin)
+for the Telepathy (http://telepathy.freedesktop.org) framework based on
 SofiaSIP-stack.
 
 %files
@@ -33,10 +33,10 @@ SofiaSIP-stack.
 
 
 %prep
-%setup -q 
+%setup -q
 
 %build
-%configure 
+%configure
 %make
 
 %install
