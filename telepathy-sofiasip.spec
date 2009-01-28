@@ -13,6 +13,9 @@ BuildRequires:  libtelepathy-glib-devel
 BuildRequires:  libxslt-proc
 BuildRequires:  pkgconfig(sofia-sip-ua-glib)
 BuildRequires:  python
+BuildRequires:  autoconf
+BuildRequires:  automake
+BuildRequires:  libtool
 Requires:       telepathy-filesystem
 
 %description
@@ -36,12 +39,13 @@ SofiaSIP-stack.
 %setup -q
 
 %build
+autoreconf -f
 %configure
 %make
 
 %install
 rm -rf %buildroot
-make install DESTDIR=%buildroot
+%makeinstall_std
 
 %clean
 rm -rf %buildroot
