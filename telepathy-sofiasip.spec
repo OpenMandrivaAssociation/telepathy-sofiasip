@@ -1,12 +1,12 @@
 Name:           telepathy-sofiasip
-Version:        0.5.15
+Version:        0.5.17
 Release:        %mkrel 1
 Summary:        A SIP protocol implementation for the Telepathy stack
 
 Group:          Networking/Instant messaging
 License:        LGPLv2+
 URL:            http://%{name}.sf.net
-Source0:        http://downloads.sourceforge.net/tp-sofiasip/%{name}-%{version}.tar.gz
+Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  libtelepathy-glib-devel
@@ -39,8 +39,7 @@ SofiaSIP-stack.
 %setup -q
 
 %build
-autoreconf -f
-%configure
+%configure2_5x
 %make
 
 %install
