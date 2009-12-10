@@ -1,5 +1,5 @@
 Name:           telepathy-sofiasip
-Version:        0.5.18
+Version:        0.5.19
 Release:        %mkrel 1
 Summary:        A SIP protocol implementation for the Telepathy stack
 
@@ -30,9 +30,7 @@ SofiaSIP-stack.
 %{_datadir}/telepathy/managers/*.manager
 %{_libdir}/%{name}
 %{_mandir}/man*/*.lzma
-%{_includedir}/telepathy-sofiasip-0.6/tpsip/event-target.h
-%{_includedir}/telepathy-sofiasip-0.6/tpsip/sofia-decls.h
-
+%{_includedir}/telepathy-sofiasip-0.6/tpsip/*.h
 
 
 %prep
