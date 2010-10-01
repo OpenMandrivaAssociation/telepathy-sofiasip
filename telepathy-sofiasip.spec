@@ -1,5 +1,5 @@
 Name:           telepathy-sofiasip
-Version:        0.6.2
+Version:        0.6.4
 Release:        %mkrel 1
 Summary:        A SIP protocol implementation for the Telepathy stack
 
