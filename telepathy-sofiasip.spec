@@ -29,7 +29,7 @@ SofiaSIP-stack.
 %{_datadir}/dbus-1/services/*.service
 %{_datadir}/telepathy/managers/*.manager
 %{_libdir}/%{name}
-%{_mandir}/man*/*.lzma
+%{_mandir}/man*/*
 %{_includedir}/telepathy-sofiasip-0.6/tpsip/*.h
 
 
