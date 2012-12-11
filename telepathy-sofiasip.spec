@@ -7,9 +7,7 @@ Group:          Networking/Instant messaging
 License:        LGPLv2+
 URL:            http://%{name}.sf.net
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
-
-BuildRequires:  libtelepathy-glib-devel
+BuildRequires:  pkgconfig(telepathy-glib)
 BuildRequires:  libxslt-proc
 BuildRequires:  pkgconfig(sofia-sip-ua-glib)
 BuildRequires:  python
@@ -24,7 +22,6 @@ for the Telepathy (http://telepathy.freedesktop.org) framework based on
 SofiaSIP-stack.
 
 %files
-%defattr(-,root,root,-)
 %doc COPYING AUTHORS
 %{_datadir}/dbus-1/services/*.service
 %{_datadir}/telepathy/managers/*.manager
@@ -43,6 +40,3 @@ SofiaSIP-stack.
 %install
 rm -rf %buildroot
 %makeinstall_std
-
-%clean
-rm -rf %buildroot
