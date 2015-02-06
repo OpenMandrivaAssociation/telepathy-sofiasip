@@ -1,6 +1,6 @@
 Name:           telepathy-sofiasip
 Version:        0.7.1
-Release:        %mkrel 1
+Release:        2
 Summary:        A SIP protocol implementation for the Telepathy stack
 
 Group:          Networking/Instant messaging
