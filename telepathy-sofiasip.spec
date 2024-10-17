@@ -5,7 +5,7 @@ Summary:        A SIP protocol implementation for the Telepathy stack
 
 Group:          Networking/Instant messaging
 License:        LGPLv2+
-URL:            http://%{name}.sf.net
+URL:            https://%{name}.sf.net
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(telepathy-glib)
 BuildRequires:  libxslt-proc
