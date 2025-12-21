@@ -7,6 +7,8 @@ Group:          Networking/Instant messaging
 License:        LGPLv2+
 URL:            https://%{name}.sf.net
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:  pkgconfig(telepathy-glib)
 BuildRequires:  libxslt-proc
 BuildRequires:  pkgconfig(sofia-sip-ua-glib)
